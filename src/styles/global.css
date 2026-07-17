@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Tokens mirrored from the product app (compittu/apps/web/src/app/globals.css).
+   Keep --color-primary and --radius-card in sync when the product theme changes. */
+@theme {
+  --color-background: oklch(1 0 0);
+  --color-foreground: oklch(0.145 0 0);
+  --color-muted: oklch(0.97 0 0);
+  --color-muted-foreground: oklch(0.556 0 0);
+  --color-primary: oklch(0.511 0.262 276.966);
+  --color-primary-foreground: oklch(0.985 0 0);
+  --color-border: oklch(0.922 0 0);
+  --color-ring: oklch(0.611 0.2 277);
+
+  --radius-card: 0.625rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+  }
+}
